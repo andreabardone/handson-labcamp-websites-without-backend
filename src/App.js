@@ -6,7 +6,7 @@ import "./index.css";
 // TODO - step 1: Import components
 import ProductsList from "./components/ProductsList"
 import AddProduct from "./components/AddProduct"
-import NewProducts from "./components/NewProducts"
+import NewProducts from "./components/NewProduct"
 
 
 // TODO - step 4: Import Firebase and initialize it
