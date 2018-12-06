@@ -22,7 +22,7 @@ class ProductsList extends Component {
         <div className="card-body">
           <ul className="list-group">
 
-{this.state.products.map = ((product,index) => {
+{this.state[products].map = ((product,index) => {
       return (
             <li className="list-group-item" key={index}>{product.name}>
               <span className="badge badge-pill badge-success">{product.count}</span>
