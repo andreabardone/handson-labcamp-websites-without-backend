@@ -4,6 +4,10 @@ import "bootstrap";
 import "./index.css";
 
 // TODO - step 1: Import components
+import ProductsList from "./components/ProductsList"
+import AddProduct from "./components/AddProduct"
+import NewProducts from "./components/NewProducts"
+
 
 // TODO - step 4: Import Firebase and initialize it
 
@@ -22,6 +26,7 @@ class App extends Component {
           </div>
         </div>
         {/* TODO - step 2: render ProductsList component */}
+        <ProductsList/>        
 
         {/* TODO - step 6: render NewProduct component */}
 
