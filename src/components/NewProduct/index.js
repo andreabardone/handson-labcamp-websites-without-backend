@@ -38,7 +38,7 @@ class NewProduct extends Component {
             </div>
             <div className="form-group mx-sm-3">
               {/* TODO - step 7: connect this input to the state */}
-              <Input name="productQnt" type="number" placeholder="Quantità" />
+              <Input name="productQnt" type="number" placeholder="Quantità" onChange={this.handleInputChange} />
             </div>
 
             {/* TODO - step 8: handle onClick of this button */}

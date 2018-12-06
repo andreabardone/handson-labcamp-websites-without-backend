@@ -6,10 +6,24 @@ import "./index.css";
 // TODO - step 1: Import components
 import ProductsList from "./components/ProductsList"
 import AddProduct from "./components/AddProduct"
-import NewProducts from "./components/NewProduct"
+import NewProduct from "./components/NewProduct"
 
 
 // TODO - step 4: Import Firebase and initialize it
+import * as firebase from "firebase";
+
+const config = {
+  apiKey: "AIzaSyD-9xGzU36RhkNmg6B_NW0hMWS3egw_T3o",
+  authDomain: "labcamp-sites-without-backend.firebaseapp.com",
+  databaseURL: "https://labcamp-sites-without-backend.firebaseio.com",
+  projectId: "labcamp-sites-without-backend",
+  storageBucket: "labcamp-sites-without-backend.appspot.com",
+  messagingSenderId: "985712486505"
+};
+
+
+firebase.initializeApp(config);
+
 
 class App extends Component {
   render = () => {
@@ -29,7 +43,9 @@ class App extends Component {
         <ProductsList/>        
 
         {/* TODO - step 6: render NewProduct component */}
-
+        <div>
+        <NewProduct />
+        </div>
         {/* TODO - step 10: render AddProduct component */}
       </div>
     );

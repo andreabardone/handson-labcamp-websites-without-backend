@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import * as firebase from "firebase";
+
 class ProductsList extends Component {
   constructor() {
     super();
@@ -13,6 +15,14 @@ class ProductsList extends Component {
 
   componentDidMount = () => {
     // TODO step 5 - fetch data from Firebase
+    const rootRef= firebase.database().ref("/group-1");
+    rootRef.on("value",snapshot => {
+const products=[]
+for (let key in snapshot.val()) { products.push(snapshot.val()[key]) }
+this.setState({ products });    
+
+    })
+
   };
 
   render = () => {
