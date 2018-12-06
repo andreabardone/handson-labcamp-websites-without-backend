@@ -5,7 +5,7 @@ class ProductsList extends Component {
     super();
 
     this.state = {
-      products: {}
+      products: [{name:'toro',count:10},{name:'biellese',count:1}]
     };
   }
 
