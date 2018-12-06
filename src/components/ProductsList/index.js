@@ -29,15 +29,6 @@ class ProductsList extends Component {
             </li> 
         );
     })}
-
-            <li className="list-group-item">
-              Product 1
-              <span className="badge badge-pill badge-success">10</span>
-            </li>
-            <li className="list-group-item">
-              Product 2
-              <span className="badge badge-pill badge-success">20</span>
-            </li>
             {/* TODO step 3 - bring to life this list dynamic (using state) */}
           </ul>
         </div>
