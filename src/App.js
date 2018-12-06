@@ -18,7 +18,7 @@ class App extends Component {
         <div className="jumbotron jumbotron-fluid">
           <div className="container">
             <h1 className="display-5">
-              Building simple Websites without backend
+              Building simple Websites without backend2
             </h1>
             <p className="lead">
               This will be your playground for the hands on part of this labcamp.
